@@ -99,13 +99,14 @@ nav {
   font-size: 1.5rem;
   color: var(--text-dark);
   cursor: pointer;
+  display: none;
 }
 
 .nav__links {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 200%;
+  width: 100%;
   padding: 2rem;
   display: flex;
   align-items: center;
@@ -114,7 +115,7 @@ nav {
   gap: 2rem;
   background-color: var(--white);
   transition: transform 0.5s;
-  z-index: -1;
+  z-index: 1;
 }
 
 .nav__links.open {
@@ -773,4 +774,36 @@ img.header__image-bg {
   .footer__container {
     grid-template-columns: repeat(4, 1fr);
   }
+}
+
+.video-poster-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.poster-container {
+  flex: 1; /* Takes up half the space */
+  padding-right: 20px; /* Space between poster and video */
+}
+
+.video-container {
+  flex: 2; /* Takes up half the space */
+}
+
+.poster-container {
+  flex: 1;
+}
+
+.poster-container img {
+  width: 100%; /* Make the image responsive */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 400px;
+}
+
+.section__subheader {
+  font-size: 2rem; /* Adjust this value as needed */
+  font-weight: 700; /* Optional: Make it bold */
+  color: var(--text-dark); /* Keep the text color */
+  text-align: center; /* Center the text */
 }

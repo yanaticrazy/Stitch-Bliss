@@ -11,31 +11,31 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+
     <!---Favicon--->
     <link rel="icon" href="assets/logo.png" type="image/png" />
     <link rel="stylesheet" href="styles.css" />
     <title>Stitch Bliss </title>
   </head>
-  <body>
-    <nav>
-      <div class="nav__header">
-        <div class="nav__logo">
-          <a href="#"> 
-            <img src="assets/logo.png" alt="Stitch Bliss Logo" style="height: 120px; width: auto;"/> <!-- Adjust height as needed -->
-          </a>
-        </div>
-        <div class="nav__menu__btn" id="menu-btn">
-          <i class="ri-menu-line"></i>
-        </div>
-      </div>
-      <ul class="nav__links" id="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#store">Store</a></li>
-        <li><a href="#service">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+
+<body>
+  <nav> <div class="nav__header">
+    <div class="nav__logo">
+      <a> <img src="assets/logo.png" alt="Stitch Bliss Logo" style="height: 120px; width: auto;"/> </a>
+      <div class="nav__menu__btn" id="menu-btn">
+      <i class="ri-menu-line"></i>
+    </div>
+  </div>
+</div>
+  <ul class="nav__links" id="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#store">Store</a></li>
+    <li><a href="#service">Services</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+  <script src="script.js"> </script>
     <header id="home">
       <div class="section__container header__container">
         <div class="header__content">
@@ -53,12 +53,15 @@
     <section class="section__container intro__container">
       <p class="section__subheader">Intro</p>
       <h1 class="section__header"></h1>
-      <div style="display: flex; justify-content: center;">
-        <div style="width: 500px; margin: 0 auto;">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/8Cj3FZPXDMk?si=4lSinHofeGMvr6dI&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>"
+      <div class="video-poster-container" style="display: flex; justify-content: center; align-items: center;">
+        <div class="poster-container" style="flex: 1; padding-right: 20px;">
+            <img src="assets/lo.png" alt="Poster" style="width: 100%; height: auto;"/>
+        </div>
+        <div class="video-container" style="flex: 1;">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/8Cj3FZPXDMk?autoplay=0&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
     </div>
-    </div>
-    </section>
+</section>
 
     <section class="section__container about__container" id="about">
       <p class="section__subheader"></p>
@@ -157,96 +160,6 @@ At Stitch Bliss, we offer a wide range of high-quality materials, unique designs
       </div>
     </section>
 
-    <section class="client">
-      <div class="section__container client__container">
-        <p class="section__subheader">Testimonials</p>
-        <h2 class="section__header">What people say about us</h2>
-        <!-- Slider main container -->
-        <div class="swiper">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-              <div class="client__card">
-                <div class="client__details">
-                  <img src="assets/client-1.jpg" alt="client" />
-                  <div>
-                    <h4>Sarah Johnson</h4>
-                    <h5>Graphic Designer</h5>
-                  </div>
-                </div>
-                <p>
-                  The care my dog received at Pet Doctor was exceptional. The
-                  vets were attentive cared about my dog's well-being.
-                </p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="client__card">
-                <div class="client__details">
-                  <img src="assets/client-2.jpg" alt="client" />
-                  <div>
-                    <h4>Michael Adams</h4>
-                    <h5>Software Engineer</h5>
-                  </div>
-                </div>
-                <p>
-                  Pet Doctor saved my cat during an emergency! Their quick
-                  response and expertise made all the difference.
-                </p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="client__card">
-                <div class="client__details">
-                  <img src="assets/client-3.jpg" alt="client" />
-                  <div>
-                    <h4>Emily Martinez</h4>
-                    <h5>Teacher</h5>
-                  </div>
-                </div>
-                <p>
-                  I trust Pet Doctor with all my pets. Their team is
-                  professional, and they always go the extra mile for their
-                  patients.
-                </p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="client__card">
-                <div class="client__details">
-                  <img src="assets/client-4.jpg" alt="client" />
-                  <div>
-                    <h4>Jason Lee</h4>
-                    <h5>Marketing Specialist</h5>
-                  </div>
-                </div>
-                <p>
-                  The grooming services at Pet Doctor are fantastic! My pup
-                  always comes back looking fresh and happy.
-                </p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="client__card">
-                <div class="client__details">
-                  <img src="assets/client-5.jpg" alt="client" />
-                  <div>
-                    <h4>David Thompson</h4>
-                    <h5>Accountant</h5>
-                  </div>
-                </div>
-                <p>
-                  I've never seen a team so dedicated to animals. Pet Doctor is
-                  my go-to clinic for all pet-related issues.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <section class="section__container instagram__container">
       <h2 class="section__header">More Products</h2>
       <div class="instagram__grid">
@@ -285,20 +198,13 @@ At Stitch Bliss, we offer a wide range of high-quality materials, unique designs
         <div class="footer__col">
           <h4>Post</h4>
           <p>Stay updated with our latest Post</p>
-          <form action="/">
-            <input type="text" placeholder="Your email" />
-            <button class="btn">
-              <i class="ri-arrow-right-line"></i>
-            </button>
-          </form>
-          <br />
           <h4>Follow Us</h4>
           <ul class="footer__socials">
             <li>
               <a href="#"><i class="ri-facebook-fill"></i></a>
             </li>
             <li>
-              <a href="#"><i class="ri-youtube-fill"></i></a>
+              <a href="https://www.youtube.com"><i class="ri-youtube-fill"></i></a>
             </li>
             <li>
               <a href="#"><i class="ri-instagram-line"></i></a>
