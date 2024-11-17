@@ -1,12 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-
 :root {
-  --primary-color: #00000018; 
+  --primary-color: #600b520e;
   --text-dark: #000000;
   --text-light: #000000dd;
   --white: #ffffff00;
-  --max-width: 1530px;
+  --max-width: 1200px;
 }
 
 #home {
@@ -26,10 +25,9 @@
 
 .section__container {
   max-width: var(--max-width);
-  padding: 5rem 8rem;
+  padding: 5rem 1rem;
   margin: auto;
 }
-
 
 .section__subheader {
   font-size: 1.2rem;
@@ -78,8 +76,6 @@ nav {
   padding: 20px 20px; /* Additional padding */
   background-color: var(--primary-color); /* Optional: Set a background color */
 }
-
-
 .nav__header {
   padding: 1rem;
   width: 100%;
@@ -99,7 +95,6 @@ nav {
   font-size: 1.5rem;
   color: var(--text-dark);
   cursor: pointer;
-  display: none;
 }
 
 .nav__links {
@@ -115,7 +110,7 @@ nav {
   gap: 2rem;
   background-color: var(--white);
   transition: transform 0.5s;
-  z-index: 1;
+  z-index: -1;
 }
 
 .nav__links.open {
@@ -309,7 +304,7 @@ img.header__image-bg {
 
 .intro__card:nth-child(1) a:hover {
   color: var(--white);
-  background-color: #ffc737;
+  background-color: #ff37de;
 }
 
 .intro__card:nth-child(2) a {
@@ -323,17 +318,17 @@ img.header__image-bg {
 }
 
 .intro__card:nth-child(3) a {
-  color: #cba9b6;
+  color: #6e1638;
   border-color: #cba9b6;
 }
 
 .intro__card:nth-child(3) a:hover {
   color: var(--white);
-  background-color: #871943fd;
+  background-color: #cba9b6;
 }
 
 .about__row {
-  margin-top: -5rem;
+  margin-top: 2rem;
   display: flex;
   gap: 2rem;
   flex-direction: column;
@@ -349,6 +344,20 @@ img.header__image-bg {
   display: block; /* Ensure the image behaves like a block element */
 }
 
+.about__row:nth-child(3) {
+  margin-top: 4rem;
+}
+
+.about__image {
+  flex: 1;
+  max-width: 400px;
+  margin-inline: auto;
+}
+
+.about__content {
+  flex: 1;
+  text-align: center;
+}
 
 .about__content span {
   margin-inline: auto;
@@ -359,6 +368,10 @@ img.header__image-bg {
   align-items: center;
   justify-content: center;
   border-radius: 100%;
+}
+
+.about__content span img {
+  max-width: 40px;
 }
 
 .about__row:nth-child(3) .about__content span {
@@ -375,7 +388,7 @@ img.header__image-bg {
 
 .about__content h4 {
   max-width: 300px;
-  margin-inline: -5;
+  margin-inline: auto;
   margin-bottom: 1rem;
   font-size: 2rem;
   font-weight: 500;
@@ -391,8 +404,8 @@ img.header__image-bg {
 }
 
 .about__content p {
-  max-width: 800px;
-  margin-inline: 1;
+  max-width: 450px;
+  margin-inline: auto;
   color: var(--text-light);
 }
 
@@ -415,12 +428,12 @@ img.header__image-bg {
 .product__grid {
   margin-top: 9rem;
   display: grid;
-  gap:20rem;
+  gap: 20rem;
 }
 
 .product__card h4 {
-  margin-block: 2rem 3px;
-  font-size: 1.5rem;
+  margin-block: 2rem 5px;
+  font-size: 1.2rem;
   font-weight: 500;
   color: var(--text-dark);
 }
@@ -432,28 +445,12 @@ img.header__image-bg {
 
 .product__card h3 {
   font-size: 1.2rem;
-  font-weight: 300;
+  font-weight: 600;
   color: var(--text-dark);
 }
 
 .service__flex {
-  display: flex;
-  justify-content: space-around;
-}
-
-.service__card {
-  text-align: center; /* Centers text and images within the card */
-}
-
-.service__card img {
-  width: 5000px; /* Set a specific width */
-  height: auto; /* Maintain aspect ratio */
-  margin-bottom: 10px; /* Space between image and text */
-  border-radius: 8px; /* Optional: adds rounded corners to images */
-}
-
-.service__flex {
-  margin-top: 3rem;
+  margin-top: 4rem;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -469,12 +466,12 @@ img.header__image-bg {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #efefefad;
+  background-color: #dff3fd;
   border-radius: 100%;
 }
 
 .service__card img {
-  max-width: 65px;
+  max-width: 45px;
 }
 
 .service__container {
@@ -483,6 +480,7 @@ img.header__image-bg {
   background-position: center; /* Center the background image */
   background-repeat: no-repeat; /* Prevent the image from repeating */
 }
+
 .service__card p {
   font-weight: 500;
   color: var(--text-light);
@@ -545,11 +543,11 @@ img.header__image-bg {
 .instagram__container p {
   max-width: fit-content;
   margin-bottom: 1rem;
-  padding: 8px 20px;
-  font-size: 3rem;
-  font-weight: 400;
+  padding: 6px 20px;
+  font-size: 1rem;
+  font-weight: 600;
   color: var(--text-dark);
-  background-color: #ef98ea;
+  background-color: #e6e3fa;
   border-radius: 5rem;
 }
 
@@ -683,14 +681,14 @@ img.header__image-bg {
 
 @media (width > 768px) {
   nav {
-    position: end;
-    padding: 0rem, 1rem;
+    position: static;
+    padding: 2rem 1rem;
     max-width: var(--max-width);
     margin-inline: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 60rem;
+    gap: 2rem;
   }
 
   .nav__header {
@@ -710,7 +708,7 @@ img.header__image-bg {
     position: static;
     padding: 0;
     flex-direction: row;
-    justify-content: end;
+    justify-content: flex-end;
     background-color: transparent;
     transform: none;
   }
@@ -774,36 +772,4 @@ img.header__image-bg {
   .footer__container {
     grid-template-columns: repeat(4, 1fr);
   }
-}
-
-.video-poster-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.poster-container {
-  flex: 1; /* Takes up half the space */
-  padding-right: 20px; /* Space between poster and video */
-}
-
-.video-container {
-  flex: 2; /* Takes up half the space */
-}
-
-.poster-container {
-  flex: 1;
-}
-
-.poster-container img {
-  width: 100%; /* Make the image responsive */
-  height: auto; /* Maintain aspect ratio */
-  max-width: 400px;
-}
-
-.section__subheader {
-  font-size: 2rem; /* Adjust this value as needed */
-  font-weight: 700; /* Optional: Make it bold */
-  color: var(--text-dark); /* Keep the text color */
-  text-align: center; /* Center the text */
 }
